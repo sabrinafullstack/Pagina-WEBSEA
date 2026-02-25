@@ -126,7 +126,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(10,15,25,0.5), rgba(10,15,25,0.5)), url('/images/hero-img.jpg');
+    background: linear-gradient(rgba(10,15,25,0.5), rgba(10,15,25,0.5)), url('../images/hero-img.jpg');
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
