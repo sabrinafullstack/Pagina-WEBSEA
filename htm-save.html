@@ -18,15 +18,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://websea.com.br/">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsividade.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3bc329aa88.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header data-aos="fade-down">
+    <header>
         <div class="logo">
             <a href="/" aria-label="Página inicial da WebSea">WebSea</a>
         </div>
@@ -57,7 +57,7 @@
         <!-- Home -->
         <section class="home" id="home">
             <article class="action">
-                <div class="action-post" data-aos="zoom-in">
+                <div class="action-post">
                     <h1>
                         Desenvolvemos websites estratégicos<br>
                         para empresas que querem crescer com autoridade.
@@ -96,7 +96,7 @@
         </section>
 
         <!-- Problema -->
-        <section class="problema" data-aos="fade-up">
+        <section class="problema">
             <div class="problema-img-container">
                 <div class="problema-img" role="img" aria-label="Ilustração representando desafios digitais">
                     <img src="images/empresario-com-problemas1.png" alt="empresario com problemas">
@@ -114,7 +114,7 @@
         </section>
 
         <!-- Serviços -->
-        <section class="skils" id="servicos" data-aos="fade-up">
+        <section class="skils" id="servicos">
             <h2>Nós transformamos sua presença digital em um ativo estratégico.</h2>
             <p>
                 Não criamos apenas sites bonitos. Desenvolvemos plataformas que posicionam sua empresa,
@@ -123,7 +123,7 @@
 
             <div class="skil-cards">
 
-                <article class="sk-card" data-aos="zoom-in">
+                <article class="sk-card">
                     <div class="img-sk" role="img" aria-label="Landing Pages">
                         <i class="fa-solid fa-computer"></i>
                     </div>
@@ -133,7 +133,7 @@
                     </div>
                 </article>
 
-                <article class="sk-card" data-aos="zoom-in">
+                <article class="sk-card">
                     <div class="img-sk" role="img" aria-label="Sites Institucionais">
                         <i class="fa-regular fa-building"></i>
                     </div>
@@ -143,7 +143,7 @@
                     </div>
                 </article>
 
-                <article class="sk-card" data-aos="zoom-in">
+                <article class="sk-card">
                     <div class="img-sk" role="img" aria-label="Redesign">
                         <i class="fa-solid fa-palette"></i>
                     </div>
@@ -153,7 +153,7 @@
                     </div>
                 </article>
 
-                <article class="sk-card" data-aos="zoom-in">
+                <article class="sk-card">
                     <div class="img-sk" role="img" aria-label="Sistemas Web">
                         <i class="fa-solid fa-code"></i>
                     </div>
@@ -167,26 +167,26 @@
         </section>
 
         <!-- Funcionamento -->
-        <section class="funcionamento" id="processo" data-aos="fade-up">
+        <section class="funcionamento" id="processo">
             <h2>Nosso método de trabalho</h2>
             <p>Cada etapa do nosso método é pensada para transformar sua presença digital em crescimento e resultados.</p>
             <ul class="timeline">
-                <li class="timeline-item first" data-aos="fade-up">
+                <li class="timeline-item first">
                     <span class="timeline-step">1</span>
                     <h3>Diagnóstico</h3>
                     <p>Entendemos seu negócio, seu público e seus objetivos estratégicos.</p>
                 </li>
-                <li class="timeline-item second" data-aos="fade-up">
+                <li class="timeline-item second">
                     <span class="timeline-step">2</span>
                     <h3>Planejamento</h3>
                     <p>Definimos estrutura, navegação e estratégia de conversão.</p>
                 </li>
-                <li class="timeline-item third" data-aos="fade-up">
+                <li class="timeline-item third">
                     <span class="timeline-step">3</span>
                     <h3>Desenvolvimento</h3>
                     <p>Criamos ou modernizamos seu website com foco em performance.</p>
                 </li>
-                <li class="timeline-item fourth" data-aos="fade-up">
+                <li class="timeline-item fourth">
                     <span class="timeline-step">4</span>
                     <h3>Entrega</h3>
                     <p>Publicação, testes e suporte inicial para garantir estabilidade total.</p>
@@ -195,7 +195,7 @@
         </section>
 
         <!-- Portfólio -->
-        <section class="portfolio" id="portfolio" data-aos="fade-up">
+        <section class="portfolio" id="portfolio">
             <article>
                 <h2>Projetos desenvolvidos</h2>
                 <p>Projetos desenvolvidos com foco em performance, posicionamento e crescimento real.</p>
@@ -203,9 +203,9 @@
 
             <div class="P-cards">
 
-                <article class="P-card" data-aos="zoom-in">
+                <article class="P-card">
                     <div class="P-img P-img1" role="img" aria-label="Projeto SL20 Engenharia"></div>
-                    <div class="P-content" data-aos="fade-up">
+                    <div class="P-content">
                         <span class="P-selo">Site Institucional</span>
                         <h3 class="P-title">SL20 Engenharia</h3>
                         <hr>
@@ -221,7 +221,7 @@
                     </div>
                 </article>
 
-                <article class="P-card" data-aos="zoom-in">
+                <article class="P-card">
                     <div class="P-img P-img1" role="img" aria-label="Projeto Web estratégico e responsivo"></div>
                     <div class="P-content">
                         <span class="P-selo">Projeto Web</span>
@@ -233,7 +233,7 @@
                             <span>SEO</span>
                             <span>Responsivo</span>
                         </div>
-                        <a class="P-link" href="#">
+                        <a class="P-link" href="#" data-aos="zoom-in">
                             Ver Projeto
                         </a>
                     </div>
@@ -243,7 +243,7 @@
         </section>
 
         <!-- Formulario de Contato -->
-        <section class="contato" id="contato" data-aos="fade-up">
+        <section class="contato" id="contato">
             <h2>Pronto para elevar sua presença digital?</h2>
             <p>
                 Preencha o formulário e receba uma proposta estratégica personalizada para seu negócio.
@@ -251,7 +251,7 @@
             </p>
             
             <div class="contato-container">
-                <form class="contato-email" method="post" action="#" aria-label="Formulário de contato" data-aos="fade-up">
+                <form class="contato-email" method="post" action="#" aria-label="Formulário de contato">
 
                     <label for="nome">Nome completo</label>
                     <input type="text" id="nome" name="nome" required>
@@ -265,7 +265,7 @@
                     <label for="mensagem">Conte um pouco sobre sua necessidade</label>
                     <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quanto mais detalhes, melhor podemos te ajudar."></textarea>
 
-                    <button type="submit" data-aos="zoom-in">Quero receber uma proposta</button>
+                    <button type="submit">Quero receber uma proposta</button>
 
                     <small class="form-info">
                         Seus dados estão seguros. <br> Resposta rápida e sem compromisso.
@@ -273,11 +273,11 @@
 
                 </form>
 
-                <aside class="contato-whatsapp" data-aos="fade-up">
+                <aside class="contato-whatsapp">
                     <img src="images/contato4.png" alt="contato via WhatsApp">
                     <h3>Prefere contato direto?</h3>
                     <p>Clique no botão abaixo e você será redirecionado para o nosso WhatsApp</p>
-                    <a href="#" aria-label="Conversar pelo WhatsApp" data-aos="zoom-in">
+                    <a href="#" aria-label="Conversar pelo WhatsApp">
                         Conversar pelo WhatsApp
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
@@ -286,7 +286,7 @@
         </section>
 
         <!-- FAQ -->
-        <section class="faq" data-aos="fade-up">
+        <section class="faq">
             <h2>Dúvidas Frequentes <span><i class="fa-regular fa-circle-question"></i></span></h2>
 
             <details>
@@ -312,12 +312,12 @@
 
         <!-- Fechamento -->
         <section class="fechamento">
-            <article class="google-logo" data-aos="zoom-in">
+            <article class="google-logo">
                 <i class="fa-brands fa-chrome"></i>
             </article>
-            <h2 data-aos="zoom-in">Enquanto você lê isso, alguém pode estar pesquisando sua empresa no Google.</h2>
-            <p data-aos="zoom-in">Vamos garantir que essa pessoa encontre você, e não a concorrência.</p>
-            <a href="#contato" data-aos="zoom-in">Falar com a WebSea <span><i class="fa-solid fa-arrow-right" ></i></span></a>
+            <h2>Enquanto você lê isso, alguém pode estar pesquisando sua empresa no Google.</h2>
+            <p>Vamos garantir que essa pessoa encontre você, e não a concorrência.</p>
+            <a href="#contato">Falar com a WebSea <span><i class="fa-solid fa-arrow-right" ></i></span></a>
         </section>
 
         <!-- Botões Aside -->
@@ -332,13 +332,13 @@
         
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container" data-aos="fade-up">
+        <div class="footer-container">
 
-            <div class="footer-col" data-aos="zoom-in">
-                <div class="footer-logo-img">
-                    <img src="images/Logo-branca/logo-nome-branca.png" alt="logo websea">
-                </div>
-                <p class="footer-logo-p">Tecnologia que impulsiona resultados</p>
+            <div class="footer-col">
+                <h2 class="footer-logo">WebSea</h2>
+                <p class="footer-description">
+                    Desenvolvimento profissional de websites para empresas que querem crescer no digital.
+                </p>
             </div>
 
             <div class="footer-col">
@@ -359,7 +359,7 @@
             </div>
 
         </div>
-        <div class="footer-bottom" data-aos="fade-up">
+        <div class="footer-bottom">
             <p class="footer-copy">&copy; <span id="ano"></span> WebSea. <br> Todos os direitos reservados</p>
         </div>
     </footer>

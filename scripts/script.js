@@ -1,12 +1,7 @@
 const abrirMenuBtn = document.querySelector('.abrir-menu');
 const navBar = document.getElementById('nav-bar');
 
-let slides = document.getElementById('radio1').checked = true;
-let contador = 1;
-let intervalo;
-
 // Menu Hamburger
-
 abrirMenuBtn.addEventListener('click', ()=>{
     abrirMenuBtn.classList.toggle('open')
     navBar.classList.toggle('active')
@@ -19,24 +14,24 @@ document.addEventListener('click', (event) => {
     }
 })
 
-// Prova Slider
+// JavaScript
+const btnTopo = document.getElementById("voltar-topo");
 
-function passarImagem() {
-    contador++;
-    if (contador > 3) contador = 1;
-    document.getElementById('radio' + contador).checked = true;
-}
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btnTopo.style.display = "block";
+  } else {
+    btnTopo.style.display = "none";
+  }
+};
 
-function reiniciarIntervalo() {
-    clearInterval(intervalo);
-    intervalo = setInterval(passarImagem, 5000);
-}
-
-document.querySelectorAll('input[type="radio"]').forEach((radio, index) => {
-    radio.addEventListener('change', () => {
-        contador = index + 1;
-        reiniciarIntervalo();
-    });
+btnTopo.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
-reiniciarIntervalo();
+// Ano atualizado no footer
+document.getElementById('ano').textContent = new Date().getFullYear();
+
