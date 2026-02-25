@@ -20,14 +20,30 @@
 
     /* Problema */
     .problema-img img{ width: 20em; }
-    .problema article h2{ font-size: 1.3em; }
-    .problema article p{ font-size: 1em; }
-    .problema article .p-destaque{ font-size: .9em; }
+
+    .problema article h2,
+    .problema article p{ text-align: center; }
+
+    .problema article h2,
+    .skils h2,
+    .funcionamento h2,
+    .portfolio article h2,
+    .contato h2 { font-size: 1.5em; }
+
+    .problema article p,
+    .skils p,
+    .funcionamento p:not(.timeline-item p),
+    .portfolio article p:not(.P-desc),
+    .contato p { font-size: 1.1em; }
+
+    .problema article .p-destaque{ font-size: 1em; }
+
 
     /* Método */
     .timeline{ gap: 2.5em; }
     .timeline-item{ padding: 10px 0;}
     .timeline-item:not(:first-child)::before{ content: ''; }
+    .timeline-item p{ font-size: 1em;}
 
     /* Portfólio */
     .P-tags{ display: none; }
@@ -212,11 +228,6 @@
         width: 100%;
         margin-right: 0; 
     }
-
-    .problema-text h2{
-        font-size: 1.4em;
-    }
-
 
     /* Métodos de Trabalho */
     .timeline-item:not(:first-child)::before{
